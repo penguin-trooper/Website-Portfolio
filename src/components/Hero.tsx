@@ -45,9 +45,9 @@ export function Hero() {
               HELLO, I AM
             </span>
           </div>
-          <h1 className="text-3xl md:text-5xl font-pixel text-neon-pink leading-[0.9] mb-6 relative inline-block drop-shadow-[0_0_12px_rgba(255,0,255,0.4)] uppercase max-w-[12ch]">
-            <span className="block">Muhammad Akmal</span>
-            <span className="block">Hakim bin Mazli</span>
+          <h1 className="text-3xl md:text-5xl font-pixel text-neon-pink leading-none mb-6 relative inline-block drop-shadow-[0_0_12px_rgba(255,0,255,0.4)] uppercase max-w-none">
+            <span className="block whitespace-nowrap">Muhammad Akmal</span>
+            <span className="block whitespace-nowrap mt-1 md:mt-2">Hakim Bin Mazli</span>
             <span className="absolute -bottom-2 left-0 w-1/3 h-1 bg-gradient-to-r from-neon-cyan to-transparent rounded-full opacity-50"></span>
           </h1>
           <p className="text-xl text-text-secondary mb-10 leading-relaxed max-w-xl font-sans">
