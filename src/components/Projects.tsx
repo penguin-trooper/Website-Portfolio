@@ -82,25 +82,25 @@ export function Projects() {
               <div className="absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.1)_50%,transparent_50%)] bg-[length:100%_4px] pointer-events-none z-10"></div>
             </div>
             
-            <div className="p-5 md:p-6 flex flex-col flex-grow relative bg-card-bg">
-              <h3 className="text-xl font-sans font-bold text-text-primary mb-3 group-hover:text-accent-primary transition-colors">{project.title}</h3>
-              <p className="text-text-secondary leading-relaxed mb-6 flex-grow font-sans text-sm">
+            <div className="p-4 md:p-5 flex flex-col flex-grow relative bg-card-bg">
+              <h3 className="text-lg md:text-xl font-sans font-bold text-text-primary mb-2.5 group-hover:text-accent-primary transition-colors leading-snug">{project.title}</h3>
+              <p className="text-text-secondary leading-relaxed mb-4 flex-grow font-sans text-sm md:text-[15px]">
                 {project.description}
               </p>
               
-              <div className="flex flex-wrap gap-2 mb-8 relative z-20">
+              <div className="flex flex-wrap gap-1.5 mb-4 md:mb-5 relative z-20">
                 {project.techStack.map((tech) => (
-                  <span key={tech} className="text-[10px] md:text-[11px] font-pixel text-text-muted bg-primary-bg border border-border-color px-2 py-1 rounded">
+                  <span key={tech} className="text-[10px] md:text-[11px] font-pixel text-text-muted bg-primary-bg border border-border-color px-2 py-0.5 rounded">
                     {tech}
                   </span>
                 ))}
               </div>
               
-              <div className="flex items-center gap-4 mt-auto relative z-20 border-t border-border-color/50 pt-4">
+              <div className="flex items-center gap-3 mt-auto relative z-20 border-t border-border-color/50 pt-3">
                 {project.githubUrl && (
                   <a 
                     href={project.githubUrl}
-                    className="flex items-center gap-2 text-sm font-medium text-text-muted hover:text-text-primary hover:shadow-[0_0_10px_rgba(248,250,252,0.2)] transition-all bg-primary-bg border border-border-color px-3 py-1.5 rounded"
+                    className="flex items-center gap-2 text-sm font-medium text-text-muted hover:text-text-primary hover:shadow-[0_0_10px_rgba(248,250,252,0.2)] transition-all bg-primary-bg border border-border-color px-3 py-1 rounded"
                   >
                     <Github size={14} />
                     Source
@@ -109,7 +109,7 @@ export function Projects() {
                 {project.liveUrl && (
                   <a 
                     href={project.liveUrl}
-                    className="flex items-center gap-2 text-sm font-medium text-accent-primary hover:text-primary-bg hover:bg-accent-primary transition-all border border-accent-primary px-3 py-1.5 rounded shadow-[0_0_10px_rgba(79,209,197,0.1)] hover:shadow-[0_0_15px_rgba(79,209,197,0.4)]"
+                    className="flex items-center gap-2 text-sm font-medium text-accent-primary hover:text-primary-bg hover:bg-accent-primary transition-all border border-accent-primary px-3 py-1 rounded shadow-[0_0_10px_rgba(79,209,197,0.1)] hover:shadow-[0_0_15px_rgba(79,209,197,0.4)]"
                   >
                     <ExternalLink size={14} />
                     Live Demo

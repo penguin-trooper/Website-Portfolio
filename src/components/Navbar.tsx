@@ -24,10 +24,10 @@ export function Navbar() {
             ))}
           </div>
           <div className="flex items-center gap-3 border-l border-border-color pl-6 ml-2">
-            <a href="#" className="text-text-secondary hover:text-accent-primary transition-colors">
+            <a href="https://github.com/penguin-trooper" target="_blank" rel="noopener noreferrer" className="text-text-secondary hover:text-accent-primary transition-colors">
               <Github size={16} />
             </a>
-            <a href="#" className="text-text-secondary hover:text-accent-primary transition-colors">
+            <a href="https://www.linkedin.com/in/akmalhakimm" target="_blank" rel="noopener noreferrer" className="text-text-secondary hover:text-accent-primary transition-colors">
               <Linkedin size={16} />
             </a>
           </div>

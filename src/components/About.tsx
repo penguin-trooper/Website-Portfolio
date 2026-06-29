@@ -44,22 +44,16 @@ export function About() {
       }
     >
       
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-16 relative z-10">
+      <div className="relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          <div className="prose prose-invert">
-            <p className="text-text-secondary leading-relaxed mb-6 font-sans">
+          <div className="max-w-3xl">
+            <p className="text-text-secondary leading-relaxed font-sans text-lg md:text-xl">
               I am a Software Engineering student at Universiti Malaya with hands-on experience in full-stack development, mobile app development, software testing, machine learning, and database systems.
-            </p>
-            <p className="text-text-secondary leading-relaxed mb-6 font-sans">
-              My work spans academic and university projects where I have contributed to product development, testing automation, and technical event leadership. I enjoy solving practical problems and turning requirements into reliable systems.
-            </p>
-            <p className="text-text-secondary leading-relaxed font-sans">
-              I am seeking a 6-month software engineering internship from August 2026 to February 2027 where I can contribute, learn, and continue building production-minded software.
             </p>
           </div>
         </motion.div>
@@ -69,15 +63,16 @@ export function About() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.5, delay: 0.2 }}
+          className="mt-10"
         >
-          <div className="glass-panel rounded-lg p-6 md:p-8 relative overflow-hidden group">
+          <div className="glass-panel rounded-lg p-6 md:p-8 relative overflow-hidden group w-full">
             {/* Decorative Top Border */}
             <div className="absolute top-0 right-0 w-16 h-1 bg-accent-secondary/50 group-hover:w-full transition-all duration-700 ease-in-out"></div>
             
             {/* Scanlines */}
             <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_50%,transparent_50%)] bg-[length:100%_4px] pointer-events-none opacity-50"></div>
             
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-8 gap-x-4 relative z-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-8 relative z-10">
               {quickInfo.map((info) => (
                 <div key={info.label} className="flex flex-col">
                   <div className="flex items-center gap-1.5 mb-2">
